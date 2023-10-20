@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flashcard {
+    width: 500px;
+    height: 350px;
+    border: 3px solid #ccc;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .question {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .answer input {
+    padding: 20px;
+    font-size: 22px;
+    width: 90%;
+  }
+  
+  .answer button {
+    padding: 20px 40px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .suggestion-box {
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: white;
+    text-align: center;
+  }
+  
+  .correct {
+    background-color: green;
+  }
+  .incorrect {
+    background-color: red;
+  }
+  
+  
