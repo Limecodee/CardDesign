@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Flashcard</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Flashcard Matching Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="flashcard" id="flashcard">
-      <div class="question">
-        What is the capital of France?
-      </div>
-      <div class="answer">
-        <input type="text" id="answerInput" placeholder="Your answer here">
-        <button onclick="checkAnswer()">Check</button>
-      </div>
+    <div id="container">
+        <div id="column1">
+            <div class="draggable" draggable="true" id="word1">Apple</div>
+            <div class="draggable" draggable="true" id="word2">Dog</div>
+            <div class="draggable" draggable="true" id="word3">Tree</div>
+        </div>
+        <div id="column2">
+            <div class="droppable" id="word1_target">Tree</div>
+            <div class="droppable" id="word2_target">Dog</div>
+            <div class="droppable" id="word3_target">Apple</div>
+        </div>
     </div>
-    <div class="suggestion-box">
-      <p>ChatGPT Suggestion:</p>
-      <div id="suggestion">Try to remember the capital of European countries.</div>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
